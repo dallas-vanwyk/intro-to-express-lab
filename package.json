@@ -1,0 +1,17 @@
+{
+  "name": "intro-to-express-lab",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Dallas Van Wyk",
+  "license": "ISC",
+  "description": "intro to express lab, General Assembly SEBPT 2024-10-21",
+  "dependencies": {
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  }
+}
