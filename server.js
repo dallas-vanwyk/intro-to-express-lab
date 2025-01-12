@@ -72,6 +72,9 @@ const shoes = [
 app.get('/shoes', (req, res) => {
 
     let filteredShoes = [...shoes];
+    // not sure why, but if I define this with CONST instead of LET I get an error with the filter methods below
+
+    // defining these into variables JUST so they're easier to type everywhere below
     const minPrice = req.query['min-price'];
     const maxPrice = req.query['max-price'];
     const type = req.query.type;
@@ -100,11 +103,12 @@ app.get('/shoes', (req, res) => {
         console.log(`no type`);
     };
 
-    console.log(filteredShoes);
-
     if (filteredShoes.length === 0) {
         res.send(`sorry, there are no shoes available: min price ${minPrice}, max price ${maxPrice}, and type ${type}`);
     } else {
+
+
+
         res.send(filteredShoes);
     };
 
