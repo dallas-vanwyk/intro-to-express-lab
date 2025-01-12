@@ -12,6 +12,7 @@
   "description": "intro to express lab, General Assembly SEBPT 2024-10-21",
   "dependencies": {
     "express": "^4.21.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "validator": "^13.12.0"
   }
 }
